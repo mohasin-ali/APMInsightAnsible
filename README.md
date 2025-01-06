@@ -41,7 +41,7 @@ Deploy and configure the Site24x7 APM Insight Java agent on your application ser
 | `jvm_config_file` | Path to web server's JVM config file | **Yes** | - |
 | `service_name` | Service name for management | No | - |
 | `restart_web_server` | Restart web server after installation | No | `true` |
-| `agent_download_dir` | Directory for agent files (optional) | No | `/usr/local/apm` |
+| `agent_download_dir` | Directory for agent files (optional) | No | `/opt/apm` |
 | `enable_agent` | Enable/disable the APM Insight agent | No | `true` |
 
 ## Example Playbook and Inventory File
