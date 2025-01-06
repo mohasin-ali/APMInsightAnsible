@@ -62,7 +62,7 @@ Deploy and configure the Site24x7 APM Insight Java agent on your application ser
       restart_web_server: 'true'
   tasks:
    - include_role:
-       name: Site24x7-Roles
+       name: Site24x7-APM
 ```    
 ### `host_inventory.yml`
 
