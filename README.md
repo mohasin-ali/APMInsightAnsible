@@ -38,7 +38,7 @@ Deploy and configure the Site24x7 APM Insight Java agent on your application ser
 | --- | --- | --- | --- |
 | `server_type` | Web server type (e.g., tomcat, jetty, wildfly) | **Yes** | - |
 | `server_version` | Web server version | No | - |
-| `jvm_config_file` | Path to web server's JVM config file | **Yes** | - |
+| `jvm_config_file` | Path to web server's JVM config file. For eg. setenv.sh file in Tomcat server | **Yes** | - |
 | `service_name` | Service name for management | No | - |
 | `restart_web_server` | Restart web server after installation | No | `true` |
 | `agent_download_dir` | Directory for agent files (optional) | No | `/opt/apm` |
