@@ -85,9 +85,29 @@ Deploy and configure the Site24x7 APM Insight Java agent on your application ser
 ```
 ## Usage
 --------
-   * Clone this repository: git clone https://github.com/your-username/site24x7-apm-insight-ansible-role.git
-   * Update apm_insight_playbook.yml with your configuration.
-   * Run the playbook: ansible-playbook -i <your-inventory-file> apm_insight_playbook.yml
+Use the below command to extract the Ansible role and rename it to ```Site24x7-APM```
+
+```curl -L -o APMInsightAnsible-main.zip https://github.com/mohasin-ali/APMInsightAnsible/archive/refs/heads/main.zip && unzip APMInsightAnsible-main.zip && mv APMInsightAnsible-main Site24x7-APM```
+
+Write your own Playbook called my-playbook.yml and Inventory file called my-inventory.yml and keep the files in parallel to folder `Site24x7-APM`
+
+After extracting the zip file with the above command, the final folder structure with the above two files (my-playbook.yml and my-inventory.yml) should look like below
+```
+├─ Site24x7-APM
+├    ├── defaults
+├    ├── handlers
+├    ├── meta
+├    ├── tasks
+├    ├── tests
+├    ├── vars
+├    ├── README.md
+├─ my-playbook.yml
+├─ my-inventory.yml
+```
+
+Run the playbook with the below command
+
+ ``` ansible-playbook -i ./my-inventory.yml ./my-playbook.yml ```
 
 ## License
 --------
