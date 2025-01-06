@@ -3,5 +3,5 @@
 
 install_default_props:
   agent_url: https://staticdownloads.site24x7.com/apminsight/agents/apminsight-javaagent.zip
-  agent_download_dir: '/usr/local/apm'
+  agent_download_dir: '/opt/apm'
   enable_agent: true
