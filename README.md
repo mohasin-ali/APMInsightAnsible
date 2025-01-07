@@ -92,7 +92,7 @@ Use the below command to extract the Ansible role and rename it to ```Site24x7-A
 Write your own Playbook called my-playbook.yml and Inventory file called my-inventory.yml and keep the files in parallel to folder `Site24x7-APM`
 
 After extracting the zip file with the above command, the final folder structure with the above two files (my-playbook.yml and my-inventory.yml) should look like below
-```
+`
 ├─ Site24x7-APM
 ├    ├── defaults
 ├    ├── handlers
@@ -103,7 +103,7 @@ After extracting the zip file with the above command, the final folder structure
 ├    ├── README.md
 ├─ my-playbook.yml
 ├─ my-inventory.yml
-```
+`
 
 Run the playbook with the below command
 
