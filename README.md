@@ -85,7 +85,7 @@ Deploy and configure the Site24x7 APM Insight Java agent on your application ser
 ```
 ## Usage
 --------
-Use the below command to extract the Ansible role and rename it to ```Site24x7-APM```
+Use the below command to extract the Ansible role & rename it to ```Site24x7-APM```
 
 ```curl -L -o APMInsightAnsible-main.zip https://github.com/mohasin-ali/APMInsightAnsible/archive/refs/heads/main.zip && unzip APMInsightAnsible-main.zip && mv APMInsightAnsible-main Site24x7-APM```
 
