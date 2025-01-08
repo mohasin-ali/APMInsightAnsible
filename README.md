@@ -19,8 +19,8 @@ Deploy and configure the Site24x7 APM Insight Java agent on your application ser
 ## Requirements
 ---------------
 
-* `unzip` command must be available on target hosts.
-* Works only for operating systems `RedHat`, `Rocky`, `AlmaLinux`, `Debian`, `Darwin`.
+* The `unzip` command must be available on target hosts.
+* Works only for operating systems `RedHat`, `Rocky`, `AlmaLinux`, `Debian` and `Darwin`.
 
 ## Configuration
 -------------
@@ -38,9 +38,9 @@ Deploy and configure the Site24x7 APM Insight Java agent on your application ser
 | --- | --- | --- | --- |
 | `server_type` | Web server type (e.g., tomcat, jetty, wildfly) | **Yes** | - |
 | `server_version` | Web server version | No | - |
-| `jvm_config_file` | Path to web server's JVM config file. For eg. `setenv.sh` file in Tomcat server | **Yes** | - |
+| `jvm_config_file` | Path to the web server's JVM config file. For eg. `setenv.sh` file in Tomcat server | **Yes** | - |
 | `service_name` | Service name for management | No | - |
-| `restart_web_server` | Restart web server after installation | No | `true` |
+| `restart_web_server` | Restart the web server after installation | No | `true` |
 | `agent_download_dir` | Directory for agent files (optional) | No | `/opt/apm` |
 | `enable_agent` | Enable/disable the APM Insight agent | No | `true` |
 
@@ -69,7 +69,7 @@ Deploy and configure the Site24x7 APM Insight Java agent on your application ser
 ```yml
  prod_webserver: # host group
   vars:
-    # Here you can apply configuration to all hosts
+    # Here, you can apply the configuration to all hosts
     ansible_user: fedora
     server_type: tomcat
   hosts:
@@ -77,7 +77,7 @@ Deploy and configure the Site24x7 APM Insight Java agent on your application ser
       ansible_host: 10.0.20.5
       #Host-specific agent configuration goes here
       java_agent_host_config:
-        #Overrides app_name set in playbook
+        #Overrides app_name set in the playbook
         app_name: Example App
     java_server_two:
       ansible_host: 127.0.40.2
