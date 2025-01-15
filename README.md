@@ -13,18 +13,18 @@
 7. [License](#license)
 
 ## Overview
-------------
+--------
 
 Deploy and configure the Site24x7 APM Insight Java agent on your application servers with ease using this Ansible role. Supports popular application servers and frameworks like Apache Tomcat, Eclipse Jetty, WildFly, and Spring Boot.
 
 ## Requirements
----------------
+--------
 
 * The `unzip` command must be available on target hosts.
 * Works only for operating systems `RedHat`, `Rocky`, `AlmaLinux`, `Debian` and `Darwin`.
 
 ## Configuration
--------------
+--------
 
 ### APM Insight Configuration Properties
 
@@ -46,7 +46,7 @@ Deploy and configure the Site24x7 APM Insight Java agent on your application ser
 | `enable_agent` | Enable/disable the APM Insight agent | No | `true` |
 
 ## Example Playbook and Inventory File
---------------------------------------
+---------
 
 ### `apm_insight_playbook.yml`
 ```yml
@@ -111,7 +111,7 @@ Run the playbook with the below command
  ``` ansible-playbook -i ./my-inventory.yml ./my-playbook.yml ```
 
  ## Uninstallation
-------------------
+--------
 To uninstall the Site24x7 APM Insight Java Agent using Ansible, you can use the following variable property in your Ansible playbook:
 
 | Property | Description | Required | Default |
