@@ -9,7 +9,8 @@
     * [Role Installation Properties](#role-installation-properties)
 4. [Example Playbook and Inventory File](#example-playbook-and-inventory-file)
 5. [Usage](#usage)
-6. [License](#license)
+6. [Uninstallation](#uninstallation)
+7. [License](#license)
 
 ## Overview
 ------------
@@ -117,7 +118,7 @@ To uninstall the Site24x7 APM Insight Java Agent using Ansible, you can use the 
 | --- | --- | --- | --- |
 | `uninstall` | Set to `true` to uninstall the agent | **Yes** | - |
 
-*Example Ansible Playbook*
+###Example Ansible Playbook
 
 Here is an example Ansible playbook that uninstalls the Site24x7 APM Insight Java Agent:
 
@@ -131,7 +132,7 @@ Here is an example Ansible playbook that uninstalls the Site24x7 APM Insight Jav
 ```
 This will initiate the uninstallation process for the Site24x7 APM Insight Java Agent.
 
-*Important Notes*
+###Important Notes
     - Make sure to set the uninstall variable to true to uninstall the agent. If you set it to false or omit it, the agent will not be uninstalled.
     - Replace webservers with the name of your host group in your Ansible inventory file.
     - Make sure to include the Site24x7-APM role in your playbook to uninstall the agent.
